@@ -30,7 +30,6 @@
 			<version>${spring.version}</version>
 			<exclusions>
 				<exclusion>
-					
 					<groupId>commons-logging</groupId>
 					<artifactId>commons-logging</artifactId>
 				</exclusion>
