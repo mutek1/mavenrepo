@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello
-        image: lsluserd/apache
+        image: lsluserd/apache:latest
         env:
         - name: "PORT"
           value: "50000"
