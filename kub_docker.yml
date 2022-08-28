@@ -1,18 +1,18 @@
  apiVersion: apps/v1
  kind: Deployment
  metadata:
-  name: my-deployment-50000
+  name: apache
 spec:
   selector:
     matchLabels:
-      app: metrics
-      department: engineering
+      app: apache
+      department: apache
   replicas: 3
   template:
     metadata:
       labels:
-        app: metrics
-        department: engineering
+        app: apache
+        department: apache
     spec:
       containers:
       - name: hello
@@ -27,8 +27,8 @@ spec:
     spec:
       type: NodePort
       selector:
-        app: metrics
-        department: engineering
+        app: apache
+        department: apache
       ports:
       - protocol: TCP
         port: 80
